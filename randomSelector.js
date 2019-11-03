@@ -36,10 +36,10 @@ const randomSelector = async (fileName, numberOfStudents) => {
   setTimeout(() => log(chalk.hex(randomColor()).bold('WINNERS:')), delay += 1000)
 
   winners.forEach((name, i) => {
-    setTimeout(() => log(chalk.hex(randomColor()).bold(`${i + 1}: ${name}`)), delay += 2200)
+    setTimeout(() => log(chalk.hex(randomColor()).bold(`${i + 1}: ${name}`)), delay += 3000)
   })
 
-  setTimeout(() => log(chalk.hex(randomColor()).bold(`${numberOfStudents + 1}: Justin Lee`)), delay += 1500)
+  setTimeout(() => log(chalk.hex(randomColor()).bold(`${numberOfStudents + 1}: Justin Lee`)), delay += 3000)
   setTimeout(() => log(chalk.hex(randomColor()).bold('CONGRATULATIONS!')), delay += 1000)
 }
 
