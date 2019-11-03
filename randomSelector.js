@@ -9,16 +9,17 @@ const log = console.log
 
 const randomColor = () => '#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6)
 
-const selectRandomName = (names, numberOfStudents) => names.sort((a, b) => a - b).slice(0, numberOfStudents)
+const selectRandomName = (names, numberOfStudents) => names
+  .sort(() => Math.random() - Math.random()).slice(0, numberOfStudents)
 
 const randomSelector = async (fileName, numberOfStudents) => {
   let delay = 1500
   const spinner = ora('Initializing random selection algorithm').start()
   setTimeout(() => (spinner.text = 'Reading student names'), delay)
   setTimeout(() => (spinner.text = 'Training ML model'), delay += 1600)
-  setTimeout(() => (spinner.text = 'Accepting bribes'), delay += 2000)
-  setTimeout(() => (spinner.text = 'BTC Address: 3P3Q1fgbvVK89JBNqZQvsd1t'), delay += 900)
-  setTimeout(() => (spinner.text = 'Accepting better bribes'), delay += 2000)
+  setTimeout(() => (spinner.text = 'Accepting bribes'), delay += 1500)
+  setTimeout(() => (spinner.text = 'BTC Address: 3P3Q1fgbvVK89JBNqZQvsd1t'), delay += 1200)
+  setTimeout(() => (spinner.text = 'Accepting better bribes...'), delay += 2000)
   delay += 1000
 
   const names = await readFileP(fileName)
@@ -35,7 +36,7 @@ const randomSelector = async (fileName, numberOfStudents) => {
   setTimeout(() => log(chalk.hex(randomColor()).bold('WINNERS:')), delay += 1000)
 
   winners.forEach((name, i) => {
-    setTimeout(() => log(chalk.hex(randomColor()).bold(`${i + 1}: ${name}`)), delay += 1500)
+    setTimeout(() => log(chalk.hex(randomColor()).bold(`${i + 1}: ${name}`)), delay += 2200)
   })
 
   setTimeout(() => log(chalk.hex(randomColor()).bold(`${numberOfStudents + 1}: Justin Lee`)), delay += 1500)
