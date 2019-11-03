@@ -17,7 +17,7 @@ const randomSelector = async (fileName, numberOfStudents) => {
   setTimeout(() => (spinner.text = 'Reading student names'), delay)
   setTimeout(() => (spinner.text = 'Training ML model'), delay += 1600)
   setTimeout(() => (spinner.text = 'Accepting bribes'), delay += 2000)
-  setTimeout(() => (spinner.text = 'BTC Address: 3P3QsMVK89JBNqZQv5zMAKG8FK3kJM4rjt'), delay += 1700)
+  setTimeout(() => (spinner.text = 'BTC Address: 3P3Q1fgbvVK89JBNqZQvsd1t'), delay += 900)
   setTimeout(() => (spinner.text = 'Accepting better bribes'), delay += 2000)
   delay += 1000
 
@@ -26,16 +26,16 @@ const randomSelector = async (fileName, numberOfStudents) => {
     .then(data => data.map(x => x[Object.keys(x)[0]]))
 
   names.forEach((name, i) => {
-    setTimeout(() => (spinner.text = name), delay += 100)
+    setTimeout(() => (spinner.text = name), delay += 70)
   })
   setTimeout(() => spinner.stop(), delay)
 
   const winners = selectRandomName(names, numberOfStudents)
 
-  setTimeout(() => log(chalk.hex(randomColor()).bold('WINNERS:')), delay)
+  setTimeout(() => log(chalk.hex(randomColor()).bold('WINNERS:')), delay += 1000)
 
   winners.forEach((name) => {
-    setTimeout(() => log(chalk.hex(randomColor()).bold(name)), delay += 1000)
+    setTimeout(() => log(chalk.hex(randomColor()).bold(name)), delay += 1500)
   })
 }
 
