@@ -41,6 +41,7 @@ const randomSelector = async (fileName, numberOfStudents) => {
 
   setTimeout(() => log(chalk.hex(randomColor()).bold(`${numberOfStudents + 1}: Justin Lee`)), delay += 3000)
   setTimeout(() => log(chalk.hex(randomColor()).bold('CONGRATULATIONS!')), delay += 1000)
+  setTimeout(() => log(chalk.hex(randomColor()).bold('Thank you all for coming. See you at the next hackathon!')), delay += 1000)
 }
 
 randomSelector('./names.csv', 5)
