@@ -1,2 +1,0 @@
-const R = require('ramda')
-
