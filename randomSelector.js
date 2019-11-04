@@ -13,11 +13,11 @@ const selectRandomName = (names, numberOfStudents) => names
   .sort(() => Math.random() - Math.random()).slice(0, numberOfStudents)
 
 const randomSelector = async (fileName, numberOfStudents) => {
-  let delay = 1500
-  const spinner = ora('Initializing random selection algorithm').start()
-  setTimeout(() => (spinner.text = 'Reading student names'), delay)
-  setTimeout(() => (spinner.text = 'Training ML model'), delay += 1600)
-  setTimeout(() => (spinner.text = 'Accepting bribes'), delay += 1500)
+  let delay = 2000
+  const spinner = ora('Initializing initialization algorithm...').start()
+  setTimeout(() => (spinner.text = 'Reading student names...'), delay)
+  setTimeout(() => (spinner.text = 'Training ML models...'), delay += 1600)
+  setTimeout(() => (spinner.text = 'Accepting bribes...'), delay += 1500)
   setTimeout(() => (spinner.text = 'BTC Address: 3P3Q1fgbvVK89JBNqZQvsd1t'), delay += 1200)
   setTimeout(() => (spinner.text = 'Accepting better bribes...'), delay += 2000)
   delay += 1000
@@ -39,7 +39,7 @@ const randomSelector = async (fileName, numberOfStudents) => {
     setTimeout(() => log(chalk.hex(randomColor()).bold(`${i + 1}: ${name}`)), delay += 3000)
   })
 
-  setTimeout(() => log(chalk.hex(randomColor()).bold(`${numberOfStudents + 1}: Justin Lee`)), delay += 3000)
+  setTimeout(() => log(chalk.hex(randomColor()).bold(`${numberOfStudents + 1}: Justin Lee 😎`)), delay += 3000)
   setTimeout(() => log(chalk.hex(randomColor()).bold('CONGRATULATIONS!')), delay += 1000)
   setTimeout(() => log(chalk.hex(randomColor()).bold('Thank you all for coming. See you at the next hackathon!')), delay += 1000)
 }
