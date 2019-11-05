@@ -1,5 +1,7 @@
 # random-selector
-Randomly select winners from a CSV
+Randomly select winners from a csv. The names in `names.csv` were randomly generated for demo purposes.
+
+<video src="./_assets/random-selector.mp4" width="320" height="200" controls preload></video>
 
 ## Getting Started
 
