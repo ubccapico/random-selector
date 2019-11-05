@@ -1,5 +1,5 @@
 # random-selector
-Randomly select winners from a csv. The names in `names.csv` were randomly generated for demo purposes.
+Randomly select winners from a csv. The names in `names.csv` were randomly generated for demo purposes. Created for use in the [Learning Analytics Hackathon](https://learninganalytics.ubc.ca/for-students/hackathons/).
 
 <video src="./_assets/random-selector.mp4" width="320" height="200" controls preload></video>
 
