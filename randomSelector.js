@@ -10,7 +10,8 @@ const log = console.log
 const randomColor = () => '#' + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6)
 
 const selectRandomName = (names, numberOfStudents) => names
-  .sort(() => Math.random() - Math.random()).slice(0, numberOfStudents)
+  .sort(() => Math.random() - Math.random())
+  .slice(0, numberOfStudents)
 
 const randomSelector = async (fileName, numberOfStudents) => {
   let delay = 2000
